@@ -160,6 +160,94 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             );
 
+            // return GridView.builder(
+            //   padding: const EdgeInsets.all(8),
+            //   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            //     crossAxisCount: 2,        // จำนวนคอลัมน์
+            //     crossAxisSpacing: 8,      // ระยะห่างแนวนอน
+            //     mainAxisSpacing: 8,       // ระยะห่างแนวตั้ง
+            //     childAspectRatio: 0.75,   // ปรับความสูงการ์ด
+            //   ),
+            //   itemCount: products.length,
+            //   itemBuilder: (context, index) {
+            //     final product = products[index];
+            //
+            //     return Card(
+            //       elevation: 2,
+            //       shape: RoundedRectangleBorder(
+            //         borderRadius: BorderRadius.circular(12),
+            //       ),
+            //       child: Column(
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: [
+            //           // รูปสินค้า
+            //           ClipRRect(
+            //             borderRadius: const BorderRadius.vertical(
+            //               top: Radius.circular(12),
+            //             ),
+            //             child: product.imageUrl.isNotEmpty
+            //                 ? Image.network(
+            //               product.imageUrl,
+            //               height: 120,
+            //               width: double.infinity,
+            //               fit: BoxFit.cover,
+            //             )
+            //                 : Container(
+            //               height: 120,
+            //               width: double.infinity,
+            //               color: Colors.grey.shade300,
+            //               child: const Icon(Icons.image_not_supported),
+            //             ),
+            //           ),
+            //
+            //           Padding(
+            //             padding: const EdgeInsets.all(8),
+            //             child: Column(
+            //               crossAxisAlignment: CrossAxisAlignment.start,
+            //               children: [
+            //                 Text(
+            //                   product.name,
+            //                   maxLines: 1,
+            //                   overflow: TextOverflow.ellipsis,
+            //                   style: const TextStyle(
+            //                     fontSize: 14,
+            //                     fontWeight: FontWeight.bold,
+            //                   ),
+            //                 ),
+            //
+            //                 const SizedBox(height: 4),
+            //
+            //                 Text(
+            //                   product.description,
+            //                   maxLines: 2,
+            //                   overflow: TextOverflow.ellipsis,
+            //                   style: TextStyle(
+            //                     fontSize: 12,
+            //                     color: Colors.grey.shade600,
+            //                   ),
+            //                 ),
+            //
+            //                 const SizedBox(height: 6),
+            //
+            //                 Text(
+            //                   '฿ ${product.price}',
+            //                   style: const TextStyle(
+            //                     fontSize: 13,
+            //                     fontWeight: FontWeight.w600,
+            //                     color: Colors.deepPurple,
+            //                   ),
+            //                 ),
+            //               ],
+            //             ),
+            //           ),
+            //         ],
+            //       ),
+            //     );
+            //   },
+            // );
+
+
+
           },
         ),
       ),

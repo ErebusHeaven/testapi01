@@ -11,7 +11,6 @@ class ApiService {
     if (response.statusCode == 200) {
       final List<dynamic> jsonData = jsonDecode(response.body);
 
-      print(jsonData);
       return jsonData
           .map((item) => Product.fromJson(item))
           .toList();
